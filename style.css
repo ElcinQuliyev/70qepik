@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style-type: none;
+  margin: 0;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+
+header {
+  background-color: orange;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  transition: all 0.4s;
+
+  nav {
+    padding-block: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h2 {
+      font-family: "roboto", sans-serif;
+      text-shadow: 2px 2px black;
+      font-weight: 700;
+    }
+    ul {
+      align-items: center;
+      li {
+        margin: 10px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.fix-menu {
+}
+
+#shop {
+  margin-block: 30px;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+}
+
+.product-item {
+  padding: 20px;
+  box-shadow: 0 0 4px -1px black;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+  .icons {
+    background-color: orange;
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -50px;
+    transition: all 0.4s;
+    color: #fff;
+  }
+  &:hover .icons {
+    bottom: 0;
+  }
+  img {
+    height: 240px;
+    object-fit: cover;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+  }
+  .prices {
+    display: flex;
+    justify-content: space-between;
+    & > p:first-child {
+      text-decoration: line-through;
+    }
+  }
+}
+
+.pagination {
+  justify-content: center;
+  gap: 10px;
+  button {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    background-color: blueviolet;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+  }
+}
+
+#searchInput {
+  border: none;
+  outline: none;
+  padding: 6px 20px;
+  box-shadow: 0 0 5px 1px violet;
+  border-radius: 4px;
+}
